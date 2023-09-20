@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#f1eded,#dbdbdf);
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    
+}
+.main{
+    background: #fff;
+    box-shadow: 5px 10px 50px rgba(87, 83, 83, 0.577);
+    border-radius: 5px;
+}
+.calculator{
+    width: 700px;
+    height: 500;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+.left,.right{
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:24px ;
+    flex-direction: column;
+}
+.right{
+    width: 60%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.left{
+    width:40%;
+    position: relative;
+}
+.left h2{
+    font-size: 25px;
+    font-weight: 400;
+    color: #000;;
+}
+.left h2::before{
+    content: '';
+    width: 2px;
+    height: 80px;
+    background: rgba(185, 94, 94, 0.877);
+    position: absolute;
+    top:-10px;
+    left: 35px;
+}
+form :where(input, select, button){
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 40px;   
+    border: 1px solid rgba(185, 94, 94, 0.877);
+}
+
+form input{
+    color: #363333;
+    font-size: 17px;
+    padding: 0 15px;
+    
+}
+form input:focus{
+    padding: 0 14px;
+    border: 2px solid skyblue;
+}
+form .drop_list{
+    display: flex;
+    text-align: center;
+    margin-top: 20px ;
+    justify-content: space-between;
+   }
+
+   #result{
+    width: 100%;
+    background-color: rgba(185, 94, 94, 0.877);
+    color: #fff
+   }
+   .result-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+   }
+   .result-container p{
+    padding: 10px;
+   }
